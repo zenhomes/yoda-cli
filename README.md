@@ -1,9 +1,3 @@
-# sauron
+# zenbit-cli 😃
 
-```npm run test```
-
-``` npm run build```
-
-``` npm version [ major | minor | patch ] ```
-
-```npm publish```
+> Set of cli tools for easy components distribution via @bit
