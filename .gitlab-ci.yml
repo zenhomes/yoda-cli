@@ -1,0 +1,21 @@
+image: ${GCE_REPOSITORY}/${GCE_PROJECT_DEV}/chrome-headless
+stages:
+  - test
+
+services:
+  - docker:18.09.7-dind
+
+variables:
+  DOCKER_HOST: tcp://localhost:2375
+
+include:
+  - project: "zenhomes/iac"
+    file: "/gitlab/commons/shared-functions.yml"
+
+test:
+  stage: test
+  script:
+    - npm_private_registry https://zenhomes.jfrog.io/zenhomes/api/npm/npm-virtual/ $NPM_ARTIFACTORY_TOKEN
+    - npm install
+    - npm run test
+    - npm run build

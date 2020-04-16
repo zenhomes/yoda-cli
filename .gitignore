@@ -1,0 +1,12 @@
+/tests/
+node_modules
+node_modules_
+build
+dist
+tmp
+npm-debug.log
+.DS_Store
+
+# Editors
+.vscode
+.idea

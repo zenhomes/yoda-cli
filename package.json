@@ -1,0 +1,19 @@
+{
+    "name": "zenbit",
+    "version": "0.0.1",
+    "description": "Automate components distribution with @bit",
+    "main": "index.js",
+    "scripts": {
+        "test": ""
+    },
+    "license": "ISC",
+    "bin": {
+        "zenbit": "./index.js"
+    },
+    "devDependencies": {},
+    "dependencies": {
+        "bit-bin": "^14.7.6",
+        "commander": "^5.0.0",
+        "semver": "^7.3.2"
+    }
+}

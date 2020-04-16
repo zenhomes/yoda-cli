@@ -1,0 +1,8 @@
+# Build results
+typings/**/*
+
+# Others
+~$*
+*~
+node_modules/
+coverage/
