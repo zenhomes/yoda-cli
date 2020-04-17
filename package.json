@@ -1,5 +1,5 @@
 {
-    "name": "zenbit",
+    "name": "@zenhomes/zenbit",
     "version": "0.0.1",
     "description": "Automate components distribution with @bit",
     "main": "index.js",

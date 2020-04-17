@@ -32,9 +32,9 @@ const updateComponentsDefaultDirectory = async (componentsDirectory) => {
 const getBitFrameworkCompiler = (framework) => {
     switch (framework) {
         case 'react':
-            return 'bit.envs/compilers/react';
+            return 'bit.envs/compilers/react-typescript';
         default:
-            return 'bit.envs/compilers/react';
+            return 'bit.envs/compilers/react-typescript';
     }
 }
 

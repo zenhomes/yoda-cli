@@ -13,6 +13,7 @@ const path = require('path');
 const { initializeWorkspace } = require('./src/commands/init');
 const { addComponent } = require('./src/commands/add');
 const { versionComponent } = require('./src/commands/version');
+const { exportComponent } = require('./src/commands/export');
 
 const pkg = require(path.join(__dirname, 'package.json'));
 const Program = new Command();
@@ -49,6 +50,14 @@ Program
     .command('version <componentId> [versionVariant]')
     .description('Add version to component')
     .action(versionComponent);
+
+
+// export
+Program
+    .command('export <remote>')
+    .description('Build, Tag and Export components to bit')
+    .option('-id, --componentId <componentId>', 'Specifies the component to export to bit')
+    .action(exportComponent);
 
 
 // --skip-auto-tag
