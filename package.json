@@ -1,5 +1,5 @@
 {
-    "name": "@zenhomes/yoda",
+    "name": "@zenhomes/yoda-cli",
     "version": "0.0.1",
     "description": "Automate components distribution with @bit",
     "main": "index.js",
