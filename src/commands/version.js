@@ -26,7 +26,7 @@ const applyVersion = async (componentId, versionVariant) => {
 
     // update config file
     const data = JSON.stringify(config, null, 4);
-    fs.writeFileSync('zenbit.config.json', data);
+    fs.writeFileSync('yoda.config.json', data);
 
     return newVersion;
 };

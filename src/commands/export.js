@@ -39,7 +39,7 @@ const buildAndPublishAllComponents = async (remote) => {
         component.published = true;
     }
     const data = JSON.stringify(config, null, 4);
-    fs.writeFileSync('zenbit.config.json', data);
+    fs.writeFileSync('yoda.config.json', data);
 }
 
 const buildAndBuildSingleComponent = async (componentId, remote) => {
@@ -54,7 +54,7 @@ const buildAndBuildSingleComponent = async (componentId, remote) => {
 
     component.published = true;
     const data = JSON.stringify(config, null, 4);
-    fs.writeFileSync('zenbit.config.json', data);
+    fs.writeFileSync('yoda.config.json', data);
 }
 
 

@@ -1,5 +1,5 @@
 {
-    "name": "@zenhomes/zenbit",
+    "name": "@zenhomes/yoda",
     "version": "0.0.1",
     "description": "Automate components distribution with @bit",
     "main": "index.js",
@@ -8,7 +8,7 @@
     },
     "license": "ISC",
     "bin": {
-        "zenbit": "./index.js"
+        "yoda": "./index.js"
     },
     "devDependencies": {},
     "dependencies": {

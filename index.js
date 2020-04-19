@@ -2,7 +2,7 @@
 
 
 /*!
- * zenbit-cli
+ * yoda-cli
  * Copyright(c) 2020 Zenhomes
  * MIT Licensed
  */
@@ -25,7 +25,7 @@ Program
 
 
 /*!
- * zenbit-cli - commands
+ * yoda-cli - commands
  */
 
  // init

@@ -60,7 +60,7 @@ const createConfig = async (framework, componentsDirectory) => {
     };
 
     const data = JSON.stringify(config, null, 4);
-    fs.writeFileSync('zenbit.config.json', data);
+    fs.writeFileSync('yoda.config.json', data);
 
     logSuccess('Config setup complete');
 };

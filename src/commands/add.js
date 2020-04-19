@@ -3,7 +3,7 @@ const { runSpawn } = require('../promisify');
 const { logSuccess, logError } = require('../logs');
 
 const getConfig = async () => {
-    const rawConfig = fs.readFileSync('zenbit.config.json');
+    const rawConfig = fs.readFileSync('yoda.config.json');
     const parsedConfig = JSON.parse(rawConfig);
     return parsedConfig;
 };
@@ -36,7 +36,7 @@ const addComponentToConfigAndBit = async (componentFolder, options) => {
             published: false
         }
         const data = JSON.stringify(config, null, 4);
-        fs.writeFileSync('zenbit.config.json', data);
+        fs.writeFileSync('yoda.config.json', data);
     }
 
     // add to bit even if it has been added before
