@@ -12,7 +12,6 @@
     },
     "devDependencies": {},
     "dependencies": {
-        "bit-bin": "^14.7.6",
         "commander": "^5.0.0",
         "semver": "^7.3.2"
     }

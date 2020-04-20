@@ -4,7 +4,7 @@ const { logInfo, logSuccess, logError } = require('../logs');
 
 const initializeBit = async () => {
     logInfo('Initializing bit workspace');
-    const bitInitResponse = await runExec('npx bit init');
+    const bitInitResponse = await runExec('bit init');
     logSuccess(bitInitResponse);
 };
 
@@ -42,7 +42,7 @@ const installFrameworkCompiler = async (framework) => {
     logInfo(`Installing compiler for ${framework}`);
 
     const bitFrameworkCompiler = getBitFrameworkCompiler(framework);
-    await runSpawn(`npx`, ['bit', 'import', `${bitFrameworkCompiler}`, '-c']);
+    await runSpawn(`bit`, ['import', `${bitFrameworkCompiler}`, '-c']);
 
     logSuccess(`Compiler installation complete`);
 };

@@ -14,9 +14,9 @@ const getModifiedComponentsKeys = (components) => {
 
 const buildAndTagComponent = async (componentId, version) => {
     // run bit build
-    await runSpawn(`npx`, ['bit', 'build', `${componentId}`, '-c']);
+    await runSpawn(`bit`, ['build', `${componentId}`, '-c']);
     // tag component
-    await runSpawn(`npx`, ['bit', 'tag', `${componentId}`, `${version}`, '--skip-auto-tag']);
+    await runSpawn(`bit`, ['tag', `${componentId}`, `${version}`, '--skip-auto-tag']);
 }
 
 const buildAndPublishAllComponents = async (remote) => {
@@ -31,7 +31,7 @@ const buildAndPublishAllComponents = async (remote) => {
     }
 
     // export built and tagged components
-    await runSpawn(`npx`, ['bit', 'export', `${remote}`]);
+    await runSpawn(`bit`, ['export', `${remote}`]);
 
     // update zenconfig file
     for (const componentId of modifiedComponentsKeys) {
@@ -50,7 +50,7 @@ const buildAndBuildSingleComponent = async (componentId, remote) => {
     await buildAndTagComponent(componentId, component.version);
 
     // export built and tagged components
-    await runSpawn(`npx`, ['bit', 'export', `${remote}`]);
+    await runSpawn(`bit`, ['export', `${remote}`]);
 
     component.published = true;
     const data = JSON.stringify(config, null, 4);

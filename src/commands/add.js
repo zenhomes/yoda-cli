@@ -40,7 +40,7 @@ const addComponentToConfigAndBit = async (componentFolder, options) => {
     }
 
     // add to bit even if it has been added before
-    await runSpawn(`npx`, ['bit', 'add', `${componentPath}`, '-i', `${id}`]);
+    await runSpawn(`bit`, ['add', `${componentPath}`, '-i', `${id}`]);
 };
 
 
