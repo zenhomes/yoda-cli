@@ -16,7 +16,7 @@ const buildAndTagComponent = async (componentId, version) => {
     // run bit build
     await runSpawn(`bit`, ['build', `${componentId}`, '-c']);
     // tag component
-    await runSpawn(`bit`, ['tag', `${componentId}`, `${version}`, '--skip-auto-tag']);
+    await runSpawn(`bit`, ['tag', `${componentId}`, `${version}`, '--skip-auto-tag', '--ignore-newest-version']);
 }
 
 const buildAndPublishAllComponents = async (remote) => {
